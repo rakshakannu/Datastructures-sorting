@@ -1,0 +1,13 @@
+import java.Util.*
+public class Test{
+  public atatic void main(string[] args)
+  {
+    ArrayList <Integer> a = new Arraylist<Integer>();
+    a.add(10);
+    a.add(5);
+    a.add(7);
+    a.add(20);
+    collections.sort(a);
+    System.out.println(a);
+  }
+}
