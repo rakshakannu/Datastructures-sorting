@@ -1,0 +1,23 @@
+// naive solution
+
+copy 2 arrays into a new array and sort it O[(m+n)*log(m+n)].
+
+//better solution O[m+n]
+
+void merge(int a[], int b[], int m, int n)
+{
+  int i=0,j=0;
+  while(i<m && j<n)
+  {
+    if(a[i]<b[j])
+    {
+      print(a[i++]<<" ");
+    }
+    else{
+      print(b[j++]<<" "); // this loop will run till the elements in the either of the arrays have not finished.
+    }
+    while(i<m){ cout<<a[i++]<<" "; }
+    while(j<n){ cout<<b[j++]<<" "; } // this will run if either of the loops have reached its end.
+  }
+}
+
