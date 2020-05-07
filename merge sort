@@ -1,0 +1,15 @@
+// divide and conquer algorithm
+// recursion based algorithm
+
+void mergesort(int arr[],int left, int right)
+{
+  if(r>l) // atleast 2 elements should be present in the array
+  {
+    int m = left+ (right-left)/2;
+    mergesort(arr,left,m);
+    mergesort(arr,m+1,right);
+    merge(arr,left,m,right); // like merging two sorted arrays
+  }
+}
+
+// for merge function, refer to gfg video
