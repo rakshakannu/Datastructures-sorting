@@ -1,0 +1,28 @@
+// finding distinct common elements between two sorted arrays
+
+// naive solution
+
+void intersection(int a[], int b[], int m, int n)
+{
+  for(int i=0;i<m;i++)
+  {
+    if(i>0 && a[i-1]==a[i])
+      continue;              // skipping the iteration for a repeated element.
+    for(j=0;j<n;j++)
+      if(a[i]==b[j])
+        System.out.println(a[i]+" ");
+  }
+}
+
+// best solution ( linear solution ) using merge function
+
+void intersection(int a[], int b[], int m, int n)
+{
+  int i=0;j=0;
+  while(i<n && j<m)
+  {
+  if(i>0 && a[i-1]==a[i]){ i++; continue; }
+  if(a[i]< b[i]){i++;}
+  else if(
+  }
+}
