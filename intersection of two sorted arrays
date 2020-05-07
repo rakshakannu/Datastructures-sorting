@@ -23,6 +23,12 @@ void intersection(int a[], int b[], int m, int n)
   {
   if(i>0 && a[i-1]==a[i]){ i++; continue; }
   if(a[i]< b[i]){i++;}
-  else if(
+  else if(a[i]>b[j]){j++;}
+  else
+  {
+    System.out.println(a[i]+" ");
+    i++;
+    j++;
+  }
   }
 }
