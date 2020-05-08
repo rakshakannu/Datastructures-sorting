@@ -3,7 +3,7 @@
 
 void isort(int arr[], int n)
 {
-  for(int i=1;i<n;i++)
+  for(int i=1;i<n;i++) // start from the first element.
   {
   int key=arr[i];
   int j=i=1;
