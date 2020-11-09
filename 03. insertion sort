@@ -1,0 +1,22 @@
+// O[n square] - worst case i.e when the array is reverse sorted
+// O[n] - best case i.e when the array is sorted
+// works well for small arrays, doesn't require extra space and it is a stable sorting algorithm
+// best performance out of all sorting algorithms when the input size is small
+// for large arrays use heap sort, merge sort or quick sort
+// inplace sorting and is stable, does not require extra space
+
+
+void isort(int arr[], int n)
+{
+  for(int i=1;i<n;i++) // start from the first element and the elements from 0 to (i-1) is sorted
+  {
+  int key=arr[i];
+  int j=i=1;
+  while(j>=0 && arr[j]>key)
+  {
+    arr[j+1]=arr[j];
+    j--;
+  }
+  arr[j+1]=key;
+  }
+}
