@@ -1,5 +1,8 @@
 // divide and conquer algorithm
 // recursion based algorithm
+// stable sorting 
+// theta(nlogn) with O[n] so not inplace sorting
+// quicksort out performs merge sort 
 
 void mergesort(int arr[],int left, int right)
 {
