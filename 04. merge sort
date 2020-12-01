@@ -6,12 +6,12 @@
 
 void mergesort(int arr[],int left, int right)
 {
-  if(r>l) // atleast 2 elements should be present in the array
+  if(r>l)                           // to check if atleast 2 elements are present in the array
   {
-    int m = left+ (right-left)/2;
+    int m = left+ (right-left)/2;   // to avoid overflow for large arrays
     mergesort(arr,left,m);
     mergesort(arr,m+1,right);
-    merge(arr,left,m,right); // like merging two sorted arrays
+    merge(arr,left,m,right);        // like merging two sorted arrays
   }
 }
 
